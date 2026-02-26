@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to Kultura Konek!</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <header>
+            <a href="#" class="brand">Kultura Konek</a>
+            <div class="menu-btn"></div>
+            <div class="navigation">
+                <div class="navigation-items">
+                    <a href="index.html">Home</a>
+                    <a href="history.html">History</a>
+                    <a href="food.html">Food</a>
+                    <a href="festivals.html">Festivals</a>
+                    <a href="attractions.html">Attractions</a>
+            </div>
+
+            </div>
+        </header>
+
+        <section class="home">
+            <video class="video-slide active" src="media/intro.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="media/2.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="media/3.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="media/4.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="media/5.mp4" autoplay muted loop></video>
+
+            <div class="content">
+                <h1>Welcome!<br><span>Mabuhay</span></h1>
+                <p>Discover the beauty, traditions, and rich culture of the Philippines in a fun and interactive way. Learn about our history, food, festivals, and famous places through pictures, videos, and exciting features. Whether you’re a student, traveller, or just curious, this site will take you on a colorful journey across the islands of the Philippines.</p>
+                
+            </div>
+            <div class="slider-navigation">
+                <div class="nav-btn active"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+            </div>
+        </section>
+
+        <script type="text/javascript">
+        //javascript of resposive navigation menu
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+
+        //javascript for video slider navigation
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slide");
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            });
+
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+        </script>
+    </body>
+</html>

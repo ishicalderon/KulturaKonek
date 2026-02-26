@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Tourist Attractions | Kultura Konek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header navigation-->
+    <header>
+        <h1 class="logo">KULTURA KONEK</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="history.html"> History </a></li>
+                <li><a href="food.html"> Food </a></li>
+                <li><a href="festivals.html"> Festivals </a></li>
+                <li><a href="attractions.html" class="active">Attractions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Hero Section-->
+    <section class="attractions-hero">
+        <div class="hero-overlay">
+            <h1>TOP TOURIST ATTRACTIONS IN THE PHILIPPINES</h1>
+            <p>The Philippines is a country filled with natural wonders, rich history, and warm people. From white sand beaches and crystal-clear waters to ancient churches and mountain views, every place has a story to tell. Filipino attractions show not only the beauty of nature but also the creativity, faith, and love for life that define Filipino culture.</p>
+        </div>
+    </section>
+
+    <!--Attractions - grid-->
+    <main class="attractions-container">
+        <div class="attractions-grid">
+            <!--Boracay Island Section-->
+            <article class="attractions-card">
+                <div class="card-image">
+                    <img src="media/boracay.jpg" alt="Boracay Island">
+                </div>
+                <div class="card-content">
+                    <h2>Boracay Island</h2>
+                    <p class="location">Aklan</p>
+                    <button class="read-more-btn" data-attraction="boracay">
+                        Read more ->
+                    </button>
+                </div>
+            </article>
+
+            <!--Banaue Rice Terraces Section-->
+            <article class="attractions-card">
+                <div class="card-image">
+                    <img src="media/banaue.jpg" alt="Banaue Rice Terraces">
+                </div>
+                <div class="card-content">
+                    <h2>Banaue Rice Terraces</h2>
+                    <p class="location">Ifugao</p>
+                    <button class="read-more-btn" data-attraction="banaue">
+                        Read more ->
+                    </button>
+                </div>
+            </article>
+
+            <!--Mayon Volcano Section-->
+            <article class="attractions-card">
+                <div class="card-image">
+                    <img src="media/mayonvolcano.jpg" alt="Mayon Volcano">
+                </div>
+                <div class="card-content">
+                    <h2>Mayon Volcano</h2>
+                    <p class="location">Bicol</p>
+                    <button class="read-more-btn" data-attraction="mayon">
+                        Read more ->
+                    </button>
+                </div>
+            </article>
+
+            <!--Chocolate Hills section-->
+            <article class="attractions-card">
+                <div class="card-image">
+                    <img src="media/chocolatehills.jpg" alt="Chocolate Hills">
+                </div>
+                <div class="card-content">
+                    <h2>Chocolate Hills</h2>
+                    <p class="location">Bohol</p>
+                    <button class="read-more-btn" data-attraction="chocolate">
+                        Read more ->
+                    </button>
+                </div>
+            </article>
+
+            <article class="attractions-card">
+                <div class="card-image">
+                    <img src="media/intramuros.jpg" alt="Intramuros">
+                </div>
+                <div class="card-content">
+                    <h2>Intramuros</h2>
+                    <p class="location">Manila</p>
+                    <button class="read-more-btn" data-attraction="intramuros">
+                        Read more ->
+                    </button>
+                </div>
+            </article>
+
+            <!--Puerto Prinsesa Section-->
+            <article class="attractions-card">
+                <div class="card-image">
+                    <img src="media/puertoprinsesa.jpg" alt="Puerto Prinsesa">
+                </div>
+                <div class="card-content">
+                    <h2>Puerto Prinsesa</h2>
+                    <p class="location">Bicol</p>
+                    <button class="read-more-btn" data-attraction="puerto">
+                        Read more ->
+                    </button>
+                </div>
+            </article>
+         </div>
+      </main>
+
+      <!--model popup-->
+      <div class="modal" id="attractionModal">
+        <div class="modal-content">
+            <button class="close-btn">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!--the content will be loaded here-->
+            </div>
+        </div>
+      </div>
+
+      <!--footer-->
+      <footer>
+        <p>© 2025 Kultura Konek | Celebrating Filipino Culture</p>
+      </footer>
+
+      <script src="attractions.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festivals of the Philippines | Kultura Konek</title>
+
+    <!--link to external css-->
+    <link rel="stylesheet" href="style.css"
+</head>
+ <body>
+    <!--header; navigation-->
+    <header>
+        <h1 class="logo">KULTURA KONEK</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="festivals.html" class="active">Festivals</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <!--hero section-->
+    <section class="festivals-hero">
+        <div class="hero-content">
+            <h1>FESTIVALS OF THE <span> PHILIPPINES</span></h1>
+            <p>The Philippines is known as the "Land of Festivals." Every province has its own celebration filled with music, food, and dancing. These events show the faith, creativity, and joy of the Filipino people.</p>
+        </div>
+    </section>
+
+    <!--main content(festivals)-->
+    <main class="festivals-container">
+
+        <!--festivals grid-->
+        <div class="festivals-grid">
+
+            <!--Sinulog Festival Card-->
+            <article class="festival-card">
+                <div class="card-image">
+                    <img src="media/sinulog.jpg" alt="Sinulog Festival">
+                </div>
+                <div class="card-content">
+                    <h2>Sinulog Festival</h2>
+                    <p class="location">Cebu City</p>
+                    <button class="read-more-btn" data-festivals="sinulog">
+                        Read more ->
+                    </button>
+                </div>
+            </article>
+
+                <!--Ati-atihan festival card-->
+                <article class="festival-card">
+                    <div class="card-image">
+                        <img src="media/ati-atihan.jpg" alt="Ati-Atihan Festival">
+                    </div>
+                    <div class="card-content">
+                        <h2>Ati-Atihan Festival</h2>
+                        <p class="location">Kalibo, Aklan</p>
+                        <button class="read-more-btn" data-festivals="atiatihan">
+                            Read more ->
+                        </button>
+                    </div>
+                </article>
+
+                <!--Pahiyas festival card-->
+                <article class="festival-card">
+                    <div class="card-image">
+                        <img src="media/pahiyas.jpg" alt="Pahiyas Festival">
+                    </div>
+                    <div class="card-content">
+                        <h2>Pahiyas Festival</h2>
+                        <p class="location">Lucban, Quezon</p>
+                        <button class="read-more-btn" data-festivals="pahiyas">
+                            Read more ->
+                        </button>
+                    </div>
+                 </article>
+
+                 <!--Panagbenga festival card-->
+                 <article class="festival-card">
+                    <div class="card-image">
+                        <img src="media/panabengga.jpg" alt="Panagbenga Festival">
+                    </div>
+                    <div class="card-content">
+                        <h2>Panagbenga Festival</h2>
+                        <p class="location">Baguio City</p>
+                        <button class="read-more-btn" data-festivals="panagbenga">
+                            Read more ->
+                        </button>
+                    </div>
+                 </article>
+                 
+                 <!--Kadayawan festival card-->
+                 <article class="festival-card">
+                    <div class="card-image">
+                        <img src="media/kadayawan.jpg" alt="Kadayawan Festival">
+                    </div>
+                    <div class="card-content">
+                        <h2>Kadayawan Festival</h2>
+                        <p class="location">Davao City</p>
+                        <button class="read-more-btn" data-festivals="davao">
+                            Read more ->
+                        </button>
+                    </div>
+                </article>
+
+                <!--Dinagyang festival card-->
+                <article class="festival-card">
+                    <div class="card-image">
+                        <img src="media/dinagyang.jpg" alt="Dinagyang Festival">
+                    </div>
+                    <div class="card-content">
+                        <h2>Dinagyang Festival</h2>
+                        <p class="location">Iloilo City</p>
+                        <button class="read-more-btn" data-festivals="dinagyang">
+                            Read more ->
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <!--modal popup-->
+        <div class="modal" id="festivalModal">
+            <div class="modal-content">
+
+                <!--close button for modal-->
+                <button class="close-btn">&times;</button>
+                <!--modal body content-->
+                <div class="modal-body" id="modalBody">
+
+                    <!--content loaded by js-->
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer>
+            <p>© 2025 Kultura Konek | Celebrating Filipino Culture</p>
+        </footer>
+
+        <!--js-->
+        <script src="festivals.js"></script>
+    </body>
+</html>
